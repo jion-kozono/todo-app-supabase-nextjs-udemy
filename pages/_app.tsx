@@ -36,7 +36,7 @@ const queryClient = new QueryClient({
     },
   },
 })
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
   const { push, pathname } = useRouter()
   const validateSession = async () => {
     const user = supabase.auth.user()
